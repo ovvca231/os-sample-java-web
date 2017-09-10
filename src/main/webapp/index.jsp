@@ -11,8 +11,6 @@
             <p> Result: <span id="result">${sum}</span></p>
         </form>
     
-    
-    
         <h2>Hello World with OpenShift!</h2>
     </body>
  </html>

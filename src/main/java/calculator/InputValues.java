@@ -9,7 +9,7 @@ public class InputValues {
         return a;
     }
 
-    public void setA(Integer a) {
+    public void setA( Integer a ) {
         this.a = a;
     }
 
@@ -17,7 +17,7 @@ public class InputValues {
         return b;
     }
 
-    public void setB(Integer b) {
+    public void setB( Integer b ) {
         this.b = b;
     }
 

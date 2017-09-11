@@ -2,8 +2,13 @@ package calculator;
 
 public class Addition {
 
-    public double add(double a, double b) {
+    public Integer add(Integer a, Integer b) {
         return a+b;
     };
 
+    public String add(String a, String b) {
+    	return a;
+    }
+    
+    
 }

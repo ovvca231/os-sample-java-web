@@ -1,18 +1,22 @@
 package calculator;
 
+
 public class Calculator {
 
-    Integer result;
+   
+    
+  //  Addition addition = new Addition();   
+   // InputValues inputValues = new InputValues();
+     
+   // inputs.setA( new Integer(14) );
+   // inputs.setB( new Integer(14) );
+ 
+    
+ 
 
-    InputValues inputValues = new InputValues();
-    inputValues.setA(10);
-    inputValues.setB(14);
+ //  result = addition.add(inputValues.getA(), inputValues.getB());
 
-    Addition addition;
-
-    result = addition.add(inputValues.getA(), inputValues.getB());
-
-
+}
     //
 //        public static void main(String[] args) {
 //            String nl = System.getProperty("line.separator");
@@ -120,4 +124,3 @@ public class Calculator {
 //
 //    }
 
-}

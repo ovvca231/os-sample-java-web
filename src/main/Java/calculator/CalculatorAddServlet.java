@@ -10,7 +10,7 @@ import java.io.IOException;
  * Servlet implementation class CalculatorServlet
  */
 public class CalculatorAddServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1021979L;
 
     /**
      * @see HttpServlet#HttpServlet()

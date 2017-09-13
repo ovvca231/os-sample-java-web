@@ -8,13 +8,13 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class CalculatorServlet
  */
-public class CalculatorServlet extends HttpServlet {
+public class CalculatorSubServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public CalculatorServlet() {
+    public CalculatorSubServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -37,8 +37,9 @@ public class CalculatorServlet extends HttpServlet {
         calculator.Binaries calc = new calculator.Binaries();
         calc.setLeft(left);
         calc.setRight(right);
-        calculator.Addition addition = new calculator.Addition();
-        String sum = addition.add(calc.getLeft(), calc.getRight() );
+
+        calculator.Substraction substraction = new calculator.Substraction();
+        String sum = substraction.sub(calc.getLeft(), calc.getRight() );
 	    request.setAttribute("sum", sum); // It'll be available as ${sum}.
         request.setAttribute("left", left); // It'll be available as ${sum}.
         request.setAttribute("right", right); // It'll be available as ${sum}.

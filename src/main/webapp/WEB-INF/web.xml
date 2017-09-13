@@ -5,13 +5,22 @@
 
 <web-app>
     <servlet>
-        <servlet-name>CalculatorServlet</servlet-name>
-        <display-name>CalculatorServlet</display-name>
-        <servlet-class>main.Java.calculator.CalculatorServlet</servlet-class>
+        <servlet-name>CalculatorAddServlet</servlet-name>
+        <display-name>CalculatorAddServlet</display-name>
+        <servlet-class>main.Java.calculator.CalculatorAddServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CalculatorSubServlet</servlet-name>
+        <display-name>CalculatorSubServlet</display-name>
+        <servlet-class>main.Java.calculator.CalculatorSubServlet</servlet-class>
     </servlet>
     <display-name>Sample Java Web Application</display-name>
   <servlet-mapping>
-      <servlet-name>CalculatorServlet</servlet-name>
-      <url-pattern>/calculator</url-pattern>
-  </servlet-mapping>
+    <servlet-name>CalculatorAddServlet</servlet-name>
+    <url-pattern>/calculatoradd</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CalculatorSubServlet</servlet-name>
+        <url-pattern>/calculatorsub</url-pattern>
+    </servlet-mapping>
 </web-app>

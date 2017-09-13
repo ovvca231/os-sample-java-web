@@ -1,0 +1,26 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+
+<web-app>
+    <servlet>
+        <servlet-name>CalculatorAddServlet</servlet-name>
+        <display-name>CalculatorAddServlet</display-name>
+        <servlet-class>main.Java.calculator.CalculatorAddServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CalculatorSubServlet</servlet-name>
+        <display-name>CalculatorSubServlet</display-name>
+        <servlet-class>main.Java.calculator.CalculatorSubServlet</servlet-class>
+    </servlet>
+    <display-name>Sample Java Web Application</display-name>
+  <servlet-mapping>
+    <servlet-name>CalculatorAddServlet</servlet-name>
+    <url-pattern>/calculatoradd</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CalculatorSubServlet</servlet-name>
+        <url-pattern>/calculatorsub</url-pattern>
+    </servlet-mapping>
+</web-app>

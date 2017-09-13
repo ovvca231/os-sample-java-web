@@ -4,9 +4,6 @@ package calculator;
 
 public class Binaries {
 
-
-	
-	
     private String left;
     private String right;
     

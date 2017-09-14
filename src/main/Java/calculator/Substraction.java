@@ -1,4 +1,4 @@
-package calculator;
+package Java.calculator;
 
 public class Substraction {
 

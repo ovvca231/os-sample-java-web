@@ -1,4 +1,4 @@
-package main.Java.calculator;
+package Java.calculator;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -10,7 +10,7 @@ import java.io.IOException;
  * Servlet implementation class CalculatorServlet
  */
 public class CalculatorAddServlet extends HttpServlet {
-	private static final long serialVersionUID = 1021979L;
+	private static final long serialVersionUID = 1L;
 
     /**
      * @see HttpServlet#HttpServlet()
@@ -35,14 +35,14 @@ public class CalculatorAddServlet extends HttpServlet {
         Integer left = Integer.valueOf(request.getParameter("left"));
 		Integer right = Integer.valueOf(request.getParameter("right"));
 	    //Integer sum = left + right;
-        calculator.Binaries calc = new calculator.Binaries();
+        Java.calculator.Binaries calc = new Java.calculator.Binaries();
         calc.setLeft(left);
         calc.setRight(right);
-        calculator.Addition addition = new calculator.Addition();
+        Java.calculator.Addition addition = new Java.calculator.Addition();
         String sum = addition.add(calc.getLeft(), calc.getRight() );
-	    request.setAttribute("sum", sum); // It'll be available as ${sum}.
-        request.setAttribute("left", left); // It'll be available as ${sum}.
-        request.setAttribute("right", right); // It'll be available as ${sum}.
+	    request.setAttribute("sum", sum);
+        request.setAttribute("left", left);
+        request.setAttribute("right", right);
 
         request.getRequestDispatcher("index.jsp").forward(request, response); // Redisplay JSP.
 	}

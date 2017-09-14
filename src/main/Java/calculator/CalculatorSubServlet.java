@@ -1,4 +1,5 @@
-package main.Java.calculator;
+package Java.calculator;
+
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -34,17 +35,17 @@ public class CalculatorSubServlet extends HttpServlet {
         Integer left = Integer.valueOf(request.getParameter("left"));
 		Integer right = Integer.valueOf(request.getParameter("right"));
 	    //Integer sum = left + right;
-        calculator.Binaries calc = new calculator.Binaries();
+        Java.calculator.Binaries calc = new Java.calculator.Binaries();
         calc.setLeft(left);
         calc.setRight(right);
 
-        calculator.Substraction substraction = new calculator.Substraction();
+        Java.calculator.Substraction substraction = new Java.calculator.Substraction();
         String sum = substraction.sub(calc.getLeft(), calc.getRight() );
-	    request.setAttribute("sum", sum); // It'll be available as ${sum}.
-        request.setAttribute("left", left); // It'll be available as ${sum}.
-        request.setAttribute("right", right); // It'll be available as ${sum}.
+	    request.setAttribute("sum", sum);
+        request.setAttribute("left", left);
+        request.setAttribute("right", right);
 
-        request.getRequestDispatcher("index.jsp").forward(request, response); // Redisplay JSP.
+        request.getRequestDispatcher("/index.jsp").forward(request, response); // Redisplay JSP.
 	}
 
 }
